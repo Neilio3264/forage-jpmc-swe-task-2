@@ -41,7 +41,7 @@ class App extends Component<{}, IState> {
     let stopCondition = 0;
     // TODO: Add in comments to explain coding logic
     const interval = setInterval(() => {
-      if (stopCondition > 10000) {
+      if (stopCondition > 500) {
         clearInterval(interval);
       } else {
         stopCondition++;
@@ -49,7 +49,7 @@ class App extends Component<{}, IState> {
           this.setState({ data: response, showGraph: true });
         });
       }
-    }, 100);
+    }, 50);
   }
 
   /**
