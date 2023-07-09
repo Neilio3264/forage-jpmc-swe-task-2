@@ -49,7 +49,7 @@ class App extends Component<{}, IState> {
           this.setState({ data: response, showGraph: true });
         });
       }
-    }, 1000);
+    }, 100);
   }
 
   /**
