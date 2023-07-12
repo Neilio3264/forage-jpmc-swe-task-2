@@ -39,7 +39,9 @@ class App extends Component<{}, IState> {
    */
   getDataFromServer() {
     let stopCondition = 0;
-    // TODO: Add in comments to explain coding logic
+    // Use the setInterval function to continuous load in new
+    // data from our server made previously and set our state so the
+    // renderGraph() method has access to the new data
     const interval = setInterval(() => {
       if (stopCondition > 500) {
         clearInterval(interval);
